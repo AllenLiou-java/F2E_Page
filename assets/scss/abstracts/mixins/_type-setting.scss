@@ -1,0 +1,33 @@
+// Block Center setting for Position
+@mixin box-center($top: 50%, $left: 50%) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-$left, -$top);
+}
+
+// Flexbox
+@mixin flexbox(
+  $justify: center,
+  $align: center,
+  $wrap: nowrap,
+  $display: flex
+) {
+  display: $display;
+  flex-wrap: $wrap;
+  justify-content: $justify; //- X 軸
+  align-items: $align; //- Y 軸
+}
+
+// Gridbox
+@mixin gridbox(
+  $columns: repeat(3, 1fr),
+  $column-gap: 30px,
+  $row-gap: 30px,
+  $display: grid
+) {
+  display: $display;
+  grid-template-columns: $columns; //- repeat(重覆次數,單位)
+  grid-column-gap: $column-gap; //- 左右間格
+  grid-row-gap: $row-gap; //- 欄跟欄的上下間格
+}

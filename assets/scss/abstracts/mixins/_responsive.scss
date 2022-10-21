@@ -1,0 +1,69 @@
+// 1440~1680
+@mixin media-w1680 {
+  @media (max-width: 1680px) {
+    @content;
+  }
+}
+
+// 1440~1280
+@mixin media-w1440 {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+// 1280~1024
+@mixin media-w1280 {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+// 1024~980
+@mixin media-w1024 {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+// 980~768
+@mixin media-w980 {
+  @media (max-width: 980px) {
+    @content;
+  }
+}
+
+// 768~680
+@mixin media-w768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+// 680~480
+@mixin media-w680 {
+  @media (max-width: 680px) {
+    @content;
+  }
+}
+
+// 480~414
+@mixin media-w480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+// 414~320
+@mixin media-w414 {
+  @media (max-width: 414px) {
+    @content;
+  }
+}
+
+// < 320
+@mixin media-w320 {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
